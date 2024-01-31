@@ -53,7 +53,7 @@ public class gestionBancaria
     public void realizarIngreso(double cantidad)
     {
 
-        if (cantidad < 0)
+        if (cantidad <= 0)
         {
             // mostrarError(ERR_CANTIDAD_INDICADA_NEGATIVA);
             throw new ArgumentOutOfRangeException("La cantidad indicada es negativa ");
